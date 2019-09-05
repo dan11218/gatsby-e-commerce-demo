@@ -1,12 +1,3 @@
-$----- usabilla added
-
-../usabilla.com # -- it takes the usabilla.com dir from the other branches. Ignore that in this branch
-
-
-#--- end of usabilla added
-
-
-
 #----- Standard gatsby gitignore below
 
 
