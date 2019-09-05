@@ -1,3 +1,7 @@
+#-- Self added project specific:
+
+../.idea
+
 #----- Standard gatsby gitignore below
 
 
