@@ -12,6 +12,8 @@ Install Gatsby CLI tools:
 
 Gatsby requires node version 8 or higher, check your version with `node -v`. If it's <8, use `nvm use 8` to use version 8.
 
+Install all required modules by running `npm install`
+
 Test by running `gatsby --version` or `gatsby info`
 
 If there are no errors, you can run `gatsby develop`. 
