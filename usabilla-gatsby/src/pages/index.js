@@ -1,69 +1,19 @@
 import React from "react"
-import {css} from "@emotion/core"
-import {Link, graphql} from "gatsby"
 import {rhythm} from "../utils/typography"
+import Header from "../components/header"
 import Layout from "../components/layout"
+import {Link} from "gatsby"
+import Button from '../components/button'
 
-export default ({data}) => {
-    return (
-        <Layout>
-            <div>
-                <h1
-                    css={css`
-            display: inline-block;
-            border-bottom: 1px solid;
-          `}
-                >
-                    All Pages from the website
-                </h1>
-                <h4>{data.allWordpressPage.totalCount} Pages</h4>
-                {data.allWordpressPage.edges.map(({node}) => (
 
-                    <div key={node.id}>
-                        <Link
-                            to={node.slug}
-                            css={css`
-                text-decoration: none;
-                color: inherit;
-              `}
-                        >
-                            <h3
-                                css={css`
-                  margin-bottom: ${rhythm(1 / 4)};
-                `}
-                            >
-                                <div dangerouslySetInnerHTML={{__html: node.title}}/>{" "}
-                                <span
-                                    css={css`
-                    color: #bbb;
-                  `}
-                                >
-                  — {node.date}
-                </span>
-                            </h3>
-                            <div dangerouslySetInnerHTML={{__html: node.excerpt}}/>
+export default () => (
+    <Layout footerSize='big'>
+        <div style={{color: `teal`}}>
+            <Header headerText="Usabilla Live Demo"/>
 
-                        </Link>
-                    </div>
-                ))}
-            </div>
-        </Layout>
-    )
-}
+            <p>Explore how Usabilla works</p>
 
-export const query = graphql`
-  query {
-  allWordpressPage(sort: { fields: [date], order: DESC }) {
-      totalCount
-      edges {
-        node {
-          id
-          title
-          date(formatString: "DD MMMM, YYYY")
-          slug
-          excerpt
-        }
-      }
-    }
-  }
-`
+            <Button to="/ecommerce/shop/" text="Start the demo <-- Inspect me, i'm a self-defined button component, yet without any styling for now" fill="yes" color="blue"></Button>
+        </div>
+    </Layout>
+)
