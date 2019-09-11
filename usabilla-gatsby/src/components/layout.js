@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 export default (props) => {
 
     return (
-        <div style={{margin: `3rem auto`, maxWidth: 650, padding: `0 1rem`}}>
+        <div style={{margin: `none`, maxWidth: '100%'}}>
             <NavBar></NavBar>
             {props.children}
             <Footer footerSize={props.footerSize} nextPage={props.footerNextPage} previousPage={props.footerPrevPage} pageNumber={props.footerPageNumber}></Footer>
