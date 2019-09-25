@@ -16,37 +16,37 @@ html {
     font-family: 'MiloWeb';
 }
 
-.jumbotron {
+.ub-jumbotron {
     background-color: #03a6c9;
     height: 20rem;
     padding: 5rem;
 }
 
-.header {
+.ub-header {
     color: white;
     font-size: 3rem;
     font-family: 'MiloWebBold';
 }
 
-.sub-header {
+.ub-sub-header {
     color: white;
     font-family: 'MiloWebLight';
 }
 
-.lead {
+.ub-lead {
     margin: auto;
     width: 50%;
     text-align: center;
 }
 
-.section_home {
+.ub-section_home {
     color: white;
     background-color: #008AAB;
     height: 20rem;
     padding: 5rem;
 }
 
-.section_container {
+.ub-section_container {
     margin-bottom: auto;
     width: 50%;
 }
