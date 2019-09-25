@@ -17,25 +17,8 @@ export default () => (
                     <Product name={"Hoodie"} />
                     <Product name={"Pens"} />
                     <Product name={"Coffee"} />
-                    <Product name={"Agenda"} />
-
                 </div>
             </div>
         </div>
     </Layout>
 );
-
-const styles = {
-    productCard: {
-        borderStyle: 'solid',
-        borderColor: 'black',
-        width: '200px',
-        margin: 'auto',
-        textAlign: 'center'
-    },
-    productImage: {
-        width: '205px',
-        height: '198px',
-        backgroundColor: '#e1e1e1',
-      },
-}
