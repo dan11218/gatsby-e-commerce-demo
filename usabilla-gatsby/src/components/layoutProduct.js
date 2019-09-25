@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import NavBar from './navbar-shop';
+import NavBar from './navbar';
 import Footer from './footer';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
@@ -11,7 +11,7 @@ export default (props) => {
         <div>
             <NavBar />
             {props.children}
-            <Footer />
+            <Footer footerSize={props.footerSize} pageNumber={1} nextPage={props.footerNextPage} previousPage={props.footerPrevPage}  />
         </div>
     )
 }
