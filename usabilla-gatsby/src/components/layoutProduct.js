@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import NavBar from './navbar-shop';
+import NavBar from './navbar';
 import Footer from './footer';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
