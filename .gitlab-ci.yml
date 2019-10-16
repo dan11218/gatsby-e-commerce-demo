@@ -43,5 +43,5 @@ deploy_to_s3_gatsby_demo:
   before_script:
     - pip install awscli
   script:
-    - aws s3 sync ./usabilla-gatsby/public/ s3://${BUCKET_NAME_GATSBY_DEMO}/ --delete --exclude ".git/*"  --exclude ".gitlab-ci.yml" --exclude "README.md"
+    - aws s3 sync ./usabilla-gatsby/public/ s3://${BUCKET_NAME_GATSBY_DEMO}/usabilla-demo/ --delete --exclude ".git/*"  --exclude ".gitlab-ci.yml" --exclude "README.md"
 
