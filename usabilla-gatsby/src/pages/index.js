@@ -13,14 +13,19 @@ export default () => (
             <div className="ub-lead">
                 <h1 className="ub-header">Usabilla Live Demo</h1>
                 <h3 className="ub-sub-header">Explore how Usabilla works!</h3>
-                <Button to="/ecommerce/shop/" text="Start the Demo" fill="yes" color="blue"></Button>
+                <Link to="/ecommerce/shop/">
+                    <Button text="Start the Demo" fill="yes" color="blue"></Button>
+                </Link>
             </div>            
         </div>
         <div className="ub-section_home" >
             <div className="ub-section_container">
                 <h4 style={styles.sectionHeader}>Listen to your users during their online shopping experience</h4>
                 <p>See how Usabilla can help you improve your checkout flow</p>
-                <Button to="/ecommerce/shop/" text="Start the Demo" fill="yes" color="blue"></Button>
+                <Link to="/ecommerce/shop/">
+                      <Button text="Start the Demo" fill="yes" color="blue">
+                      </Button>
+                </Link>
             </div>
         </div>
     </Layout>

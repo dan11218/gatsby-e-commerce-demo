@@ -21,7 +21,7 @@ export default props => {
             <footer>
                 <Link to={prev}>Previous page</Link>
                 <p>{pageNumber}/6</p>
-                <Button to={next} color='blue' filled='yes' text='Next page'></Button>
+                <Link to={next}> <Button color='blue' filled='yes' text='Next page'></Button></Link>
             </footer>
         )
 
