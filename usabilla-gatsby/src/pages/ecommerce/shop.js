@@ -5,6 +5,7 @@ import {rhythm} from "../../utils/typography"
 import Header from "../../components/header"
 import Layout from "../../components/layoutProduct"
 import Product from "../../components/productCard"
+import heroImage from "../../../static/assets/Hero_image.png"
 
 // TODO: Work on Header component, make font and color of text modular
 
@@ -19,12 +20,12 @@ export default () => (
             </div>
             <div className='container'>
                 <div className='row'>
-                    <Product image={require('../../../static/assets/logo/coffee.jpg')} name={"T-Shirt"} />
-                    <Product image={require('../../../static/assets/logo/coffee.jpg')} name={"Mug"} />
-                    <Product image={require('../../../static/assets/logo/coffee.jpg')} name={"Hoodie"} />
-                    <Product image={require('../../../static/assets/logo/coffee.jpg')} name={"Pens"} />
-                    <Product image={require('../../../static/assets/logo/coffee.jpg')} name={"Coffee"} />
-                    <Product image={require('../../../static/assets/logo/coffee.jpg')} name={"Notebook"} />
+                    <Product image={require('../../../static/assets/coffee.png')} name={"Usabilla Coffee"} description={"Intense Blend"} price={"€18.00"} />
+                    <Product image={require('../../../static/assets/hoodie.png')} name={"Usabilla Hoodie"} description={"Blue | 100% cotton"} price={"€50.00"} />
+                    <Product image={require('../../../static/assets/shirt.png')} name={"Usabilla T-Shirt"} description={"Grey | 100% Cotton"} price={"€30.00"} />
+                    <Product image={require('../../../static/assets/canvas-tote-bag.png')} name={"Canvas Bag"} description={"White"} price={"€14.00"} />
+                    <Product image={require('../../../static/assets/pen.png')} name={"Pen"} description={"Black | Ballpoint"} price={"€10.00"} />
+                    <Product image={require('../../../static/assets/planner.png')} name={"Planner"} description={"Black"} price={"€13.00"} />
                 </div>
             </div>
         </div>
@@ -33,13 +34,18 @@ export default () => (
 
 const styles = {
     jumbotron: {
-        backgroundImage: `url(${"https://usabilla.com/img/voc/voc-header.jpg"})`,
+        backgroundImage: `url(${heroImage})`,
         height: '500px',
+        backgroundSize: 'cover',
     },
     productHeader: {
         margin: '0 30px 0',
-        position: 'absolute',
+        position: 'relative',
         top: '50%',
+        width: '500px',
         transform: 'translateY(-50%)',
+        backgroundColor: 'rgba(0, 166, 202, 0.9)',
+        padding: '.5rem',
+        borderRadius: '15px',
     }
 }
