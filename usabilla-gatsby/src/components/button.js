@@ -22,6 +22,6 @@ export default props => {
     const classes = `button ${colorclassMap[color]} ${fillclassMap[fill]}`
 
     return (
-        <Link to={to} className={classes}>{props.text}</Link>
+        <span className={classes}>{props.text}</span>
     )
 }

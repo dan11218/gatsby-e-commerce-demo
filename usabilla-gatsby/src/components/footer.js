@@ -21,7 +21,7 @@ export default props => {
             <footer>
                 <Link to={prev}>Previous page</Link>
                 <p>{pageNumber}/6</p>
-                <Button to={next} color='blue' filled='yes' text='Next page'></Button>
+                <Link to={next}> <Button color='blue' filled='yes' text='Next page'></Button></Link>
             </footer>
         )
 
@@ -44,27 +44,27 @@ export default props => {
 
         return (
             <footer style={{marginBottom: `1.5rem`, display: `flex`, flexDirection: `row`, justifyContent: `space-between`}}>
-                <Link to="/" style={{textShadow: `none`, backgroundImage: `none`}}>
+                <a href="/" style={{textShadow: `none`, backgroundImage: `none`}}>
                     <h3 style={{display: `inline`}}>Usabilla by Surveymonkey</h3>
-                </Link>
+                </a>
                 <ul style={{listStyle: `none`}}>
                     <p>About</p>
-                    <ListLink to="/">About</ListLink>
-                    <ListLink to="/about/">Our Team</ListLink>
-                    <ListLink to="/contact/">Career</ListLink>
-                    <ListLink to="/">Contact Us</ListLink>
-                    <ListLink to="/about/">Press</ListLink>
+                    <a href="/">About</a>
+                    <a href="/about/">Our Team</a>
+                    <a href="/contact/">Career</a>
+                    <a href="/">Contact Us</a>
+                    <a href="/about/">Press</a>
 
                 </ul>
                 <ul style={{listStyle: `none`}}>
                     <p>Customers</p>
-                    <ListLink to="/">Success Stories</ListLink>
-                    <ListLink to="/about/">Our Customers</ListLink>
+                    <a href="/">Success Stories</a>
+                    <a href="/about/">Our Customers</a>
                 </ul>
                 <ul style={{listStyle: `none`}}>
                     <p>About</p>
-                    <ListLink to="/">Support</ListLink>
-                    <ListLink to="/about/">System Status</ListLink>
+                    <a href="/">Support</a>
+                    <a href="/about/">System Status</a>
                 </ul>
             </footer>
         )

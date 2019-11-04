@@ -1,0 +1,47 @@
+variables:
+  AWS_DEFAULT_REGION: eu-west-1
+  BUCKET_NAME_GATSBY_DEMO: usabilla-demo
+
+
+stages:
+  - build
+  - test
+  - deploy
+
+build_site:
+  only:
+    - dev
+  image: node:10.13.0
+  stage: build
+  script:
+    - cd usabilla-gatsby
+    - rm -rf ./node_modules
+    - npm install
+    - ./node_modules/.bin/gatsby build --prefix-paths
+    - "echo 'User-agent: *' > ./public/robots.txt"
+    - "echo 'Disallow: /' >> ./public/robots.txt"
+
+  artifacts:
+    paths:
+      - ./usabilla-gatsby/public
+
+run_tests:
+  dependencies:
+    - build_site
+  stage: test
+  script:
+    - echo "This is where tests could be run"
+
+
+deploy_to_s3_gatsby_demo:
+  only:
+    - dev
+  dependencies:
+    - build_site
+  stage: deploy
+  image: "python:latest"  # We use python because there is a well-working AWS Sdk
+  before_script:
+    - pip install awscli
+  script:
+    - aws s3 sync ./usabilla-gatsby/public/ s3://${BUCKET_NAME_GATSBY_DEMO}/usabilla-demo/ --delete --exclude ".git/*"  --exclude ".gitlab-ci.yml" --exclude "README.md"
+

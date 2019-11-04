@@ -23,7 +23,7 @@ export default props => {
                         <p>reviews, questions, answers</p>
                         <p> Select your color</p>
                         <p> choose your size</p>
-                        <Button color='blue' to='/ecommerce/cart/' fill='yes' text='Add to Cart' ></Button>
+                        <Link> <Button color='blue' to='/ecommerce/cart/' fill='yes' text='Add to Cart' ></Button></Link>
 
                     </div>
                 </div>
