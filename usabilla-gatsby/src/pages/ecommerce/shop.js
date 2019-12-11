@@ -18,7 +18,10 @@ export default () => (
             </div>
             <div>
             <form style={styles.form}>
-                <label><input style={styles.input} type="text" name="field" placeholder="Search..." /></label><img src={require('../../../static/assets/search.png')} />
+                <label>
+                    <input style={styles.input} type="text" name="field" placeholder="Search..." />
+                </label>
+                <img style={styles.search} src={require('../../../static/assets/search.png')} />
             </form>
             </div>
             <div className='container'>
@@ -53,9 +56,19 @@ const styles = {
     },
     form: {
         textAlign: 'right',
+        backgroundColor: '#f3f6fb',
+        display: 'flex',
+        justifyContent: 'flex-end',
     },
     input: {
         border: 'none',
         borderBottom: '2px solid rgb(0, 166, 202)',
+        backgroundColor: 'rgba(0, 0, 0, 0)',
+        height: '100%'
+    },
+    search: {
+        width: '40px',
+        height: '40px',
+        display: 'inline-block'
     }
 }
