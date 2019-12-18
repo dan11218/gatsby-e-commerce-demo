@@ -26,7 +26,7 @@ export default props => {
     <header style={{background: '#03a6c9'}}>
         <Link to="/" style={{textShadow: `none`, backgroundImage: `none`}}>
             {/* <h3 style={{display: `inline`}}>{data.site.siteMetadata.title}</h3> */}
-            <img src={usabillaLogo} style={{width: '100px', margin: '5px 50px'}}/>
+            <img src={usabillaLogo} style={{width: '100px', margin: '10px 50px'}}/>
         </Link>
         <ul style={{display: 'flex', listStyle: `none`, float: `right`}}>
             <ListLink to="/">Home</ListLink>
