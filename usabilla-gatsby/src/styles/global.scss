@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'MiloWeb';
+    src: url('./MiloWeb.woff');
+}
+
+@font-face {
+    font-family: 'MiloWebBold';
+    src: url('./MiloWeb-Bold.woff')
+}
+
+@font-face {
+    font-family: 'MiloWebLight';
+    src: url('./MiloWeb-Light.woff');
+}
+
+html {
+    font-family: 'MiloWeb';
+}
+
+.ub-jumbotron {
+    background-color: #03a6c9;
+    height: 20rem;
+    padding: 5rem;
+}
+
+.ub-header {
+    color: white;
+    font-size: 3rem;
+    font-family: 'MiloWebBold';
+}
+
+.ub-sub-header {
+    color: white;
+    font-family: 'MiloWebLight';
+}
+
+.ub-lead {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.ub-section_home {
+    color: white;
+    background-color: #008AAB;
+    height: 20rem;
+    padding: 5rem;
+}
+
+.ub-section_container {
+    margin-bottom: auto;
+    width: 50%;
+}

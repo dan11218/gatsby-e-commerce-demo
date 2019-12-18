@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'MiloWebBold';
+    src: url('../styles/MiloWeb-Bold.woff')
+}
+
+@font-face {
+    font-family: 'MiloWebLight';
+    src: url('../styles/MiloWeb-Light.woff');
+}
+
+h1 {
+    color: white;
+}
+
+.bold {
+    font-family: 'MiloWebBold';
+}
+
+.light{
+    font-family: 'MiloWebLight';
+}
