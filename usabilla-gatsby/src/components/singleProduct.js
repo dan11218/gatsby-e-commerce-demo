@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import productStyles from './productPage.module.scss'
 import {Link} from "gatsby"
 import Button from '../components/button'
-
+import shirt from '../../public/assets/shirt.png'
 
 
 
@@ -16,6 +16,7 @@ export default props => {
                     <div className='col-5'>
                         <p>T-shirt</p>
                         <p>Small t-shirts</p>
+                        <img src={shirt} style={{width: '200px'}} />
                     </div>
                     <div className='col-7'>
                         <p>Usabilla t-shirt, 30 euro</p>
