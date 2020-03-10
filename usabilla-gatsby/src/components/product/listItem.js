@@ -8,7 +8,7 @@ export default (props) => {
                     <img src={props.image} />
                 </div>
                 <div className='col'>
-                    <p>{props.name} {props.price}€</p>
+                    <p>{props.name} - {props.price}</p>
                     <p>{props.description}</p>
                 </div>
             </div>

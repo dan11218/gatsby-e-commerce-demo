@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import NavBar from './navbar';
-import Footer from './footer';
+import React from 'react';
+import NavBar from './navigation/navbar';
+import Footer from './navigation/footer';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
 // TODO create new navbar component for this page

@@ -2,8 +2,8 @@ import React from "react"
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import productStyles from './productPage.module.scss'
 import {Link} from "gatsby"
-import Button from '../components/button'
-import shirt from '../../public/assets/shirt.png'
+import Button from '../elements/button'
+import shirt from '../../../public/assets/shirt.png'
 
 
 

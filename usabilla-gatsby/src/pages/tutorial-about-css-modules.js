@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../components/about-css-modules.module.scss"
-import Container from "../components/container"
+import Container from "../components/elements/container"
 import Layout from "../components/layout"
 
 

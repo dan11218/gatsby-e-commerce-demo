@@ -1,7 +1,6 @@
 import React from "react"
-import { useStaticQuery, Link, graphql } from "gatsby"
-import NavBar from '../components/navbar'
-import Footer from '../components/footer'
+import NavBar from './navigation/navbar'
+import Footer from './navigation/footer'
 
 export default (props) => {
 

@@ -1,9 +1,41 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+exports.onPostBuild = ({ reporter }) => {
+    reporter.info(`Your Gatsby site has been built!`)
+  }
 
+// exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
+//     const products = [
+//       { id: 1, name: "Usabilla Coffee", price: "€18.00", photo: "../../../static/assets/coffee.png", description: "Intense Blend" },
+//       { id: 2, name: "Usabilla Hoodie", price: "€30.00", photo: "../../../static/assets/hoodie.png'", description: "Blue | 100% cotton" },
+//       { id: 3, name: "Usabilla T-Shirt", price: "€25.00", photo: "../../../static/assets/shirt.png", description: "Grey | 100% Cotton" },
+//       { id: 4, name: "Canvas Bag", price: "€14.00", photo: "../../../static/assets/canvas-tote-bag.png", description: "White" },
+//       { id: 5, name: "Pen", price: "€10.00", photo: "../../../static/assets/pen.png", description: "Black | Ballpoint" },
+//       { id: 6, name: "Planner", price: "€13.00", photo: "../../../static/assets/planner.png", description: "Black" }
+//     ]
+  
+//     products.forEach(product => {
+//       const node = {
+//         name: product.name,
+//         price: product.price,
+//         photo: product.photo,
+//         description: product.description,
+//         id: createNodeId(`Products-${product.id}`),
+//         internal: {
+//           type: "product",
+//           contentDigest: createContentDigest(product),
+//         },
+//       }
+//       actions.createNode(node)
+//     })
+// }
 
-
+module.exports = {
+    siteMetadata: {
+      title: `Title from siteMetadata`,
+    }
+}
 
 // Example of creating pages from wordpress
 // exports.createPages = async({ graphql, actions }) => {

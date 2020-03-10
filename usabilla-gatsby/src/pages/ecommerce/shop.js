@@ -4,10 +4,10 @@ import React from "react"
 // import {rhythm} from "../../utils/typography"
 import Header from "../../components/header"
 import Layout from "../../components/layoutProduct"
-import Product from "../../components/productCard"
+import Product from "../../components/product/productCard"
 import heroImage from "../../../static/assets/Hero_image.png"
 
-export default () => (
+export default ({data}) => (
     <Layout footerSize='small' footerNextPage='/ecommerce/product' footerPrevPage='/' footerPageNumber='1'>
         <div>
             <div style={styles.jumbotron}>
@@ -21,7 +21,7 @@ export default () => (
                 <label>
                     <input style={styles.input} type="text" name="field" placeholder="Search..." />
                 </label>
-                <img style={styles.search} src={require('../../../static/assets/search.png')} />
+                <img alt="placeholder" style={styles.search} src={require('../../../static/assets/search.png')} />
             </form>
             </div>
             <div className='container'>
@@ -32,6 +32,7 @@ export default () => (
                     <Product image={require('../../../static/assets/canvas-tote-bag.png')} name={"Canvas Bag"} description={"White"} price={"€14.00"} />
                     <Product image={require('../../../static/assets/pen.png')} name={"Pen"} description={"Black | Ballpoint"} price={"€10.00"} />
                     <Product image={require('../../../static/assets/planner.png')} name={"Planner"} description={"Black"} price={"€13.00"} />
+                    
                 </div>
             </div>
         </div>
@@ -72,3 +73,4 @@ const styles = {
         display: 'inline-block'
     }
 }
+
