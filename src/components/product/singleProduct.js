@@ -16,7 +16,7 @@ export default props => {
                     <div className='col-5'>
                         <p>T-shirt</p>
                         <p>Small t-shirts</p>
-                        <img src={shirt} style={{width: '200px'}} />
+                        <img alt="product" src={shirt} style={{width: '200px'}} />
                     </div>
                     <div className='col-7'>
                         <p>Usabilla t-shirt, 30 euro</p>

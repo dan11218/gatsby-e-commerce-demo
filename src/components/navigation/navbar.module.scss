@@ -1,10 +1,36 @@
+@font-face {
+    font-family: 'MiloWeb';
+    src: url('../../styles/MiloWeb.woff');
+}
+
+@font-face {
+    font-family: 'MiloWebBold';
+    src: url('../../styles/MiloWeb-Bold.woff')
+}
+
+@font-face {
+    font-family: 'MiloWebLight';
+    src: url('../../styles/MiloWeb-Light.woff');
+}
+
 .header {
     background: #03a6c9;
+    padding: 20px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 0px;
 }
 
 .links {
-    display: 'flex'; 
-    list-style: none;
-    float: right;
     color: white;
+    font-family: "MiloWebLight";
+    font-size: 22px;
+    margin-top: 1.6rem;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: rgb(250, 250, 250);
+    }
 }

@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'MiloWeb';
+    src: url('../../styles/MiloWeb.woff');
+}
+
+@font-face {
+    font-family: 'MiloWebBold';
+    src: url('../../styles/MiloWeb-Bold.woff')
+}
+
+@font-face {
+    font-family: 'MiloWebLight';
+    src: url('../../styles/MiloWeb-Light.woff');
+}
+
+.jumbotron {
+    background-image: url('../../../static/assets/Hero_image.png');
+    height: 500px;
+    background-size: cover;
+    h1, h2 {
+        color: white;
+    }
+}
+
+.header {
+    margin: 0 30px 0;
+    position: relative;
+    top: 50%;
+    width: 500px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 166, 202, 0.9);
+    padding: .5rem;
+    border-radius: 15px;
+}
+
+form {
+    text-align: right;
+    background-color: #f3f6fb;
+    display: flex;
+    justify-content: flex-end;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid rgb(0, 166, 202);
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+}
+
+.search {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.shop {
+    a {
+        text-decoration: none;
+        color: rgb(83, 83, 83);
+    }
+}

@@ -31,11 +31,7 @@ exports.onPostBuild = ({ reporter }) => {
 //     })
 // }
 
-module.exports = {
-    siteMetadata: {
-      title: `Title from siteMetadata`,
-    }
-}
+
 
 // Example of creating pages from wordpress
 // exports.createPages = async({ graphql, actions }) => {

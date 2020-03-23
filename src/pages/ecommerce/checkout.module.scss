@@ -13,29 +13,26 @@
     src: url('../../styles/MiloWeb-Light.woff');
 }
 
-.cart {
-    margin-top: 40px;
-    
-}
-
-.subtotal {
-    background-color: #00a6ca;
-    border-radius: 7px;
-    color: white;
-    height: 100%;
-    padding: 1.5rem;
-    font-size: 15px;
-}
-
-h1 {
+.checkout {
+    margin: 50px;
+    // border: solid black;
     color: rgb(83, 83, 83);
 }
 
-h2 {
-    color: white;
+.tabs {
+    text-align: center;
+    cursor: pointer;
+    h4 {
+        font-size: 22px;
+        color: rgb(83, 83, 83);
+    }
 }
 
-h3 {
-    font-family: 'MiloWebBold';
-    color: rgb(83, 83, 83);
+.info {
+    h3 {
+        color: #03a6c9;
+    }
+    background-color: #F2F6FB;
+    height: 300px;
+    padding: 20px;
 }

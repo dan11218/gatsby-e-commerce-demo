@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'MiloWeb';
+    src: url('../../styles/MiloWeb.woff');
+}
+
+@font-face {
+    font-family: 'MiloWebBold';
+    src: url('../../styles/MiloWeb-Bold.woff')
+}
+
+@font-face {
+    font-family: 'MiloWebLight';
+    src: url('../../styles/MiloWeb-Light.woff');
+}
+
+.footer {
+    font-family: "Miloweb";
+    background-color: rgb(242,246,251);
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // margin-bottom: 1.5rem;
+    a {
+        text-decoration: none;
+        color: rgb(83, 83, 83);
+    }
+}
+
+.link {
+    margin-top: 40px;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.tagline {
+    h3 {
+        color: rgb(83, 83, 83);
+        font-family: "MiloWebLight";
+    }
+    margin-top: 20px;
+}
+
