@@ -18,7 +18,7 @@ export default class Confirmation extends React.Component {
                 </div>
                 <div className="ub-section_home" >
                     <div className={"ub-section_container " + styles.links}>
-                        <Link to="/ecommerce/">Back to home</Link>
+                        <Link to="/">Back to home</Link>
                     </div>
                 </div>
             </Layout>
