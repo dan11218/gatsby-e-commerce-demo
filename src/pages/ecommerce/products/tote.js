@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../../components/layout"
-import shirt from "../../../../static/assets/coffee.png"
+import tote from "../../../../static/assets/canvas-tote-bag.png"
 import styles from "./product.module.scss"
 
 export default props => 
@@ -8,11 +8,12 @@ export default props =>
 		<div className={`container ${styles.product}`}>
 			<div className={"row"}>
 				<div className={"col-5"}>
-					<img alt="product" src={shirt} width={"300px"}/>
+					<img alt="product" src={tote} width={"300px"}/>
 				</div>
 				<div className={"col-7"}>
-					<h1>USABILLA T-SHIRT</h1>
+					<h1>CANVAS TOTE BAG</h1>
 					<h3>100% Cotton</h3>
+					<h3>€14.00</h3>
 				</div>
 			</div>
 			<div className={"row"}>

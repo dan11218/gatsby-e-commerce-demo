@@ -13,6 +13,7 @@ export default props =>
 				<div className={"col-7"}>
 					<h1>USABILLA T-SHIRT</h1>
 					<h3>100% Cotton</h3>
+					<h3>€25.00</h3>
 				</div>
 			</div>
 			<div className={"row"}>

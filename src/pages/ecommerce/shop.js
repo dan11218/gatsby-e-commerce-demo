@@ -39,7 +39,7 @@ export default props => (
                     <Link to= "/ecommerce/products/shirt/">
                         <Product image={require('../../../static/assets/shirt.png')} name={"Usabilla T-Shirt"} description={"Grey | 100% Cotton"} price={"€25.00"} />
                     </Link>
-                    <Link to= "/ecommerce/products/canvas-tote-bag/">
+                    <Link to= "/ecommerce/products/tote/">
                         <Product image={require('../../../static/assets/canvas-tote-bag.png')} name={"Canvas Bag"} description={"White"} price={"€14.00"} />
                     </Link>
                     </div>

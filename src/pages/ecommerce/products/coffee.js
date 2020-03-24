@@ -11,8 +11,9 @@ export default props =>
 					<img alt="product" src={shirt} width={"300px"}/>
 				</div>
 				<div className={"col-7"}>
-					<h1>USABILLA T-SHIRT</h1>
-					<h3>100% Cotton</h3>
+					<h1>USABILLA COFFEE</h1>
+					<h3>Custom Blend</h3>
+					<h3>€18.00</h3>
 				</div>
 			</div>
 			<div className={"row"}>

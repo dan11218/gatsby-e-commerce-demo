@@ -50,7 +50,7 @@ export default class Checkout extends React.Component {
 									<p>€2,90</p>
 								</div>
 								</div>
-								<Link to="/ecommerce/confirmation/">CONFIRM ORDER</Link>
+								<Link to="/ecommerce/confirmation/"><h3>CONFIRM ORDER</h3></Link>
 							</div>
 						</div>
 					</div>

@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../../components/layout"
+import {Link} from "gatsby"
 import ListItem from "../../components/product/listItem"
 import styles from "./cart.module.scss"
 import Button from "../../components/elements/button"
@@ -29,7 +30,7 @@ export default () => (
                                 <p>€2,90</p>
                             </div>
                         </div>
-                        <Button color={"blue"} fill={'yes'} text={"CHECKOUT"} />
+                        <Link to="/ecommerce/checkout/"><h3>CHECKOUT</h3></Link>
                     </div>
                 </div>
             </div> 
